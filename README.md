@@ -36,7 +36,7 @@ How to setup a new VM with mysql:
 
 6. Log in: sudo mysql
 
-7. Create user 'name'@'%' identified by name123
+7. Create user 'name'@'%' identified by password
 
 8. Confirm: select user from mysql.user;
 
@@ -44,13 +44,15 @@ How to setup a new VM with mysql:
 
 10. Test local user connection: mysql -u name -p
 
-11. Create database tempdata;
+11. Create database database name;
 
 12. show databases;
 
 13. creating tables: 
-use {database name}c
-reate table table_name(var1 varchar(255), var2 varchar(255));
+
+use {database name}
+
+create table table_name(var1 varchar(255), var2 varchar(255));
 
 14. Updating mysql configuration to enable connections: sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
