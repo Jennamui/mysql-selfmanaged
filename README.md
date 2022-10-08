@@ -5,17 +5,27 @@ Cloud Environment: GCP
 How to setup a new VM with mysql:
 
 1. Create new VM instance in GCP or Azure
+
 -machine type: e2-micro
+
 -Architecture: x86/64
+
 -Firewalls: HTTP and HTTPS traffic On
+
 -Boot disk image: ubuntu 
+
 -All else is default settings
 
 2. Add port 3306 by creating a new firewall rule
+
 -Ingress
+
 -Target: apply to all
+
 -IP Ranges: 0.0.0.0
+
 -Ports: tcp:3306
+
 -Priority: 1000
 
 3. Connect to VM
